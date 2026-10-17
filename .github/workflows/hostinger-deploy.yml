@@ -12,13 +12,13 @@ concurrency:
 
 jobs:
   validate:
-    name: Quality & Integrity Gate
+    name: 🔍 Quality & Integrity Gate
     runs-on: ubuntu-latest
     steps:
       - name: 📥 Checkout Code
         uses: actions/checkout@v4
 
-      - name: 🔍 Verify Production Assets
+      - name: 🛡️ Verify Production Assets
         run: |
           echo "Verifying production assets exist and are non-empty..."
           test -s index.html || { echo "Error: index.html is missing or empty"; exit 1; }
@@ -26,7 +26,8 @@ jobs:
           test -s script.js || { echo "Error: script.js is missing or empty"; exit 1; }
           test -s robots.txt || { echo "Error: robots.txt is missing or empty"; exit 1; }
           test -s sitemap.xml || { echo "Error: sitemap.xml is missing or empty"; exit 1; }
-          echo "✅ All core files validated successfully."
+          test -s .htaccess || { echo "Error: .htaccess is missing or empty"; exit 1; }
+          echo "✅ All core files and .htaccess validated successfully."
 
   deploy:
     name: 🚀 Deploy to Hostinger
@@ -38,7 +39,41 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: 📤 Sync Files to Hostinger (public_html)
+      - name: ⚙️ Detect Deployment Configuration
+        id: check_config
+        env:
+          HAS_FTP: ${{ secrets.HOSTINGER_FTP_SERVER != '' && secrets.HOSTINGER_FTP_USERNAME != '' }}
+          HAS_WEBHOOK: ${{ secrets.HOSTINGER_WEBHOOK_URL != '' }}
+        run: |
+          if [ "$HAS_WEBHOOK" = "true" ]; then
+            echo "mode=webhook" >> $GITHUB_OUTPUT
+            echo "Deployment Mode: Hostinger Webhook"
+          elif [ "$HAS_FTP" = "true" ]; then
+            echo "mode=ftp" >> $GITHUB_OUTPUT
+            echo "Deployment Mode: Hostinger FTPS"
+          else
+            echo "mode=none" >> $GITHUB_OUTPUT
+            echo "Deployment Mode: None configured yet"
+          fi
+
+      - name: 🌐 Deploy via Hostinger Webhook
+        if: steps.check_config.outputs.mode == 'webhook'
+        run: |
+          echo "Triggering Hostinger Git Auto-Deploy Webhook..."
+          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "${{ secrets.HOSTINGER_WEBHOOK_URL }}")
+          HTTP_STATUS=$(echo "$RESPONSE" | tail -n1)
+          BODY=$(echo "$RESPONSE" | sed '$d')
+          echo "Hostinger response status: $HTTP_STATUS"
+          echo "Hostinger response body: $BODY"
+          if [ "$HTTP_STATUS" -ge 200 ] && [ "$HTTP_STATUS" -lt 300 ]; then
+            echo "✅ Successfully triggered Hostinger auto-deployment!"
+          else
+            echo "❌ Hostinger Webhook responded with status $HTTP_STATUS"
+            exit 1
+          fi
+
+      - name: 📤 Sync Files to Hostinger via FTPS
+        if: steps.check_config.outputs.mode == 'ftp'
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.HOSTINGER_FTP_SERVER }}
@@ -53,5 +88,29 @@ jobs:
             **/.git*/**
             **/.github*
             **/.github*/**
-            **/README.md
-            **/LICENSE
+            **/quality/baseline/**
+            **/graphify-out/cache/**
+            **/graphify-out/.graphify*
+
+      - name: ℹ️ Deployment Guide & Credentials Notice
+        if: steps.check_config.outputs.mode == 'none'
+        run: |
+          echo "=========================================================================="
+          echo "ℹ️  NOTICE: Hostinger Credentials / Webhook not yet added to GitHub Secrets."
+          echo "=========================================================================="
+          echo "Your code and assets are validated and ready."
+          echo "To enable automatic deployment, choose either of the following two methods:"
+          echo ""
+          echo "METHOD 1 (Recommended - Hostinger hPanel Git Auto-Deploy):"
+          echo "  1. In Hostinger hPanel -> Advanced -> Git -> Add your repository."
+          echo "  2. Copy the Webhook URL provided by Hostinger."
+          echo "  3. In GitHub repo Settings -> Secrets -> Actions -> New secret:"
+          echo "     Name: HOSTINGER_WEBHOOK_URL"
+          echo "     Value: <Your Hostinger Webhook URL>"
+          echo ""
+          echo "METHOD 2 (Direct FTPS Sync):"
+          echo "  In GitHub repo Settings -> Secrets -> Actions -> Add secrets:"
+          echo "    - HOSTINGER_FTP_SERVER"
+          echo "    - HOSTINGER_FTP_USERNAME"
+          echo "    - HOSTINGER_FTP_PASSWORD"
+          echo "=========================================================================="

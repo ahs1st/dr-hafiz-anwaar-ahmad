@@ -1,16 +1,6 @@
 # ==========================================
 # .gitignore - Dr. Hafiz Anwaar Ahmad Website
-# Only clean production code & assets tracked
 # ==========================================
-
-# Graphify Knowledge Graph & Cache
-graphify-out/
-.graphify*
-
-# Quality, Audit Protocols & Raw Data
-quality/
-WEB-100-PROTOCOL.md
-DR_HAFIZ_ANWAAR_AHMAD_SANGRA_DATA.md
 
 # Operating System Files
 .DS_Store
@@ -33,11 +23,15 @@ desktop.ini
 *~
 *.bak
 
-# Antigravity & AI Agent Artifacts
+# Antigravity & AI Agent Local State
 .gemini/
 .agents/
 .system_generated/
 scratch/
+
+# Local Graphify Cache & Python Pointer (Keep graph.html, graph.json, GRAPH_REPORT.md tracked)
+graphify-out/cache/
+graphify-out/.graphify*
 
 # Logs, Dumps & Temporary Files
 *.log

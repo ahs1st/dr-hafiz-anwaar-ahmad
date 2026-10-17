@@ -59,13 +59,28 @@ python -m http.server 8000
 
 ---
 
-## 🚀 Hostinger CI/CD Auto-Deployment (ہوسٹنگر آٹو ڈپلائمنٹ)
+## 🚀 Hostinger Auto-Deployment Methods (ہوسٹنگر پر ڈپلائمنٹ کے دو طریقے)
 
-This repository includes an automated GitHub Actions CI/CD pipeline (`.github/workflows/hostinger-deploy.yml`) that automatically tests and deploys the clean website files to Hostinger (`public_html/`) upon pushing to the `main` branch.
+This repository includes a multi-mode automated GitHub Actions CI/CD pipeline (`.github/workflows/hostinger-deploy.yml`) supporting two deployment methods:
 
-### Required GitHub Secrets (گٹ ہب سیکرٹس کی سیٹنگ)
+### طریقہ نمبر 1: ہوسٹنگر گٹ ویب ہک (Hostinger hPanel Git — سب سے آسان)
+1. لاگ ان کریں **Hostinger hPanel** ➡️ **Websites** ➡️ **Manage**۔
+2. بائیں مینو میں **Advanced** ➡️ **Git** پر جائیں۔
+3. درج ذیل معلومات درج کریں:
+   - **Repository:** `https://github.com/ahs1st/dr-hafiz-anwaar-ahmad.git`
+   - **Branch:** `main`
+   - **Install directory:** `public_html`
+4. **Create** پر کلک کریں۔ ہوسٹنگر آپ کو ایک **Auto-Deployment Webhook URL** دے گا۔
+5. اپنے گٹ ہب ریپوزٹری میں جائیں: **Settings** ➡️ **Secrets and variables** ➡️ **Actions** ➡️ **New secret**:
+   - **Secret Name:** `HOSTINGER_WEBHOOK_URL`
+   - **Value:** ہوسٹنگر سے حاصل کردہ ویب ہک یو آر ایل۔
+   
+*(اس طریقہ سے ہر گٹ پش پر ہوسٹنگر خودکار طور پر نیا کوڈ فوری پل کر لیتا ہے)*
 
-Go to your GitHub Repository -> **Settings** -> **Secrets and variables** -> **Actions** -> Click **New repository secret**:
+---
+
+### طریقہ نمبر 2: سیکیور FTPS ٹرانسفر (FTPS Deploy)
+اگر آپ FTP/FTPS استعمال کرنا چاہتے ہیں تو گٹ ہب ریپوزٹری سیکرٹس میں درج ذیل ویلیوز شامل کریں:
 
 | Secret Name | Description | Example Value |
 | :--- | :--- | :--- |
@@ -74,4 +89,5 @@ Go to your GitHub Repository -> **Settings** -> **Secrets and variables** -> **A
 | `HOSTINGER_FTP_PASSWORD` | Hostinger FTP Account Password | `YourSecureFtpPassword` |
 | `HOSTINGER_TARGET_DIR` *(Optional)* | Target directory in Hostinger | `public_html/` (Default) |
 | `HOSTINGER_FTP_PROTOCOL` *(Optional)* | Secure Transfer Protocol | `ftps` (Default) |
+
 

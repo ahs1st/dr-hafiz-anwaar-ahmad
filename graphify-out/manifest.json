@@ -1,0 +1,98 @@
+{
+  "script.js": {
+    "mtime": 1792213953.5886085,
+    "seen": 1792220146.0963805,
+    "ast_hash": "f3bd446be12fb305bdef62675bf77ba6",
+    "semantic_hash": "f3bd446be12fb305bdef62675bf77ba6"
+  },
+  "404.html": {
+    "mtime": 1792217721.9604163,
+    "seen": 1792220146.0963805,
+    "ast_hash": "18851b4df7c66e31d5685539090bed4b",
+    "semantic_hash": "18851b4df7c66e31d5685539090bed4b"
+  },
+  "DR_HAFIZ_ANWAAR_AHMAD_SANGRA_DATA.md": {
+    "mtime": 1792178634.0050719,
+    "seen": 1792220146.0963805,
+    "ast_hash": "d39b31c4af22fe1668e9080a9f98b0eb",
+    "semantic_hash": "d39b31c4af22fe1668e9080a9f98b0eb"
+  },
+  "WEB-100-PROTOCOL.md": {
+    "mtime": 1792205274.604693,
+    "seen": 1792220146.0963805,
+    "ast_hash": "22695df9af7130c2f432981d9fc675d5",
+    "semantic_hash": "22695df9af7130c2f432981d9fc675d5"
+  },
+  "index.html": {
+    "mtime": 1792217680.888522,
+    "seen": 1792220146.0963805,
+    "ast_hash": "5dacb07c15202b7abec347cd5c4a721f",
+    "semantic_hash": "5dacb07c15202b7abec347cd5c4a721f"
+  },
+  "quality/CHANGELOG.md": {
+    "mtime": 1792218248.3243449,
+    "seen": 1792220146.0963805,
+    "ast_hash": "667e461d71d8bdbff011df408510abcc",
+    "semantic_hash": "667e461d71d8bdbff011df408510abcc"
+  },
+  "quality/QUESTIONS.md": {
+    "mtime": 1792206272.1451209,
+    "seen": 1792220146.0963805,
+    "ast_hash": "81e01fc6cf545785d755a23ade1c1a69",
+    "semantic_hash": "81e01fc6cf545785d755a23ade1c1a69"
+  },
+  "quality/REPORT.md": {
+    "mtime": 1792206823.4006836,
+    "seen": 1792220146.0963805,
+    "ast_hash": "c81a9bc711d1d434830d988968593c28",
+    "semantic_hash": "c81a9bc711d1d434830d988968593c28"
+  },
+  "robots.txt": {
+    "mtime": 1792205913.3560143,
+    "seen": 1792220146.0963805,
+    "ast_hash": "e818e16a2d42bfd074638c6164da7b5d",
+    "semantic_hash": "e818e16a2d42bfd074638c6164da7b5d"
+  },
+  "images/dhq_hospital_chiniot_exterior_signboard.webp": {
+    "mtime": 1792178538.426723,
+    "seen": 1792220146.0963805,
+    "ast_hash": "1786b1f7be34b0efd243f8324d9cafc1",
+    "semantic_hash": "1786b1f7be34b0efd243f8324d9cafc1"
+  },
+  "images/dr_sangra_clinic_entrance_and_standee.webp": {
+    "mtime": 1792205777.867,
+    "seen": 1792220146.0963805,
+    "ast_hash": "e98aad4da287958c8703fa07d70f9bc8",
+    "semantic_hash": "e98aad4da287958c8703fa07d70f9bc8"
+  },
+  "images/dr_sangra_clinical_services_standee_banner.webp": {
+    "mtime": 1792205771.641,
+    "seen": 1792220146.0963805,
+    "ast_hash": "cd82516e683e9bc732d4ea4bd352fcca",
+    "semantic_hash": "cd82516e683e9bc732d4ea4bd352fcca"
+  },
+  "images/dr_sangra_consultation_desk_with_echocardiography_machine.webp": {
+    "mtime": 1792205783.785,
+    "seen": 1792220146.0963805,
+    "ast_hash": "66941d737f69fcca81ad1adab791d65d",
+    "semantic_hash": "66941d737f69fcca81ad1adab791d65d"
+  },
+  "images/dr_sangra_executive_headshot_portrait.webp": {
+    "mtime": 1792214266.647564,
+    "seen": 1792220146.0963805,
+    "ast_hash": "dde56ebb515c8a9929d4b3746c8fbe0f",
+    "semantic_hash": "dde56ebb515c8a9929d4b3746c8fbe0f"
+  },
+  "images/dr_sangra_oladoc_verified_portal_avatar.webp": {
+    "mtime": 1792178538.835867,
+    "seen": 1792220146.0963805,
+    "ast_hash": "3eed53d581a8bab1377e4b052fbe297b",
+    "semantic_hash": "3eed53d581a8bab1377e4b052fbe297b"
+  },
+  "images/favicon.svg": {
+    "mtime": 1792205803.3359098,
+    "seen": 1792220146.0963805,
+    "ast_hash": "5c53d03aaaf0c138de208479efe6b453",
+    "semantic_hash": "5c53d03aaaf0c138de208479efe6b453"
+  }
+}
