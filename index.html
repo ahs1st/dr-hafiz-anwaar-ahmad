@@ -28,11 +28,9 @@
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="images/dr_sangra_executive_headshot_portrait.webp" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="fonts/inter-latin-var.woff2">
+<link rel="preload" as="image" href="images/dr_sangra_executive_headshot_portrait-400w.webp" imagesrcset="images/dr_sangra_executive_headshot_portrait-280w.webp 280w, images/dr_sangra_executive_headshot_portrait-400w.webp 400w, images/dr_sangra_executive_headshot_portrait-560w.webp 560w" imagesizes="(max-width: 640px) 267px, 400px" fetchpriority="high">
+<style>@font-face{font-family:'Inter';font-style:normal;font-weight:400 800;font-display:swap;src:url('fonts/inter-latin-var.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD} @font-face{font-family:'Inter Fallback';src:local('Arial');size-adjust:107%;ascent-override:90%;descent-override:22%;line-gap-override:0%}:root{--teal-900:#062a35;--teal-800:#0b3d4d;--teal-700:#0f5064;--teal-600:#146579;--teal-500:#1a7d92;--mint:#e8f4f4;--mint-2:#f4f9f9;--gold:#c8a24a;--gold-soft:#e6cf8f;--gold-text:#8a6d1f;--ink:#10222a;--body:#41545c;--line:#dbe7e8;--white:#ffffff;--wa:#25d366;--radius:16px;--radius-lg:24px;--shadow-sm:0 2px 8px rgba(6,42,53,.06);--shadow:0 14px 40px -18px rgba(6,42,53,.35);--shadow-lg:0 30px 60px -28px rgba(6,42,53,.45);--container:1180px;--ff-en:'Inter','Inter Fallback',system-ui,-apple-system,'Segoe UI',sans-serif} *,*::before,*::after{box-sizing:border-box;overflow-wrap:break-word} html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;overflow-x:clip;max-width:100vw;width:100%} body{margin:0;padding:0;font-family:var(--ff-en);color:var(--body);background:var(--white);line-height:1.65;font-size:16px;overflow-x:hidden;overflow-x:clip;max-width:100vw;width:100%;padding-bottom:calc(66px+env(safe-area-inset-bottom,0px))} @media (min-width:768px){body{padding-bottom:0} } img{max-width:100%;display:block;height:auto} a{color:inherit;text-decoration:none} ul{margin:0;padding:0;list-style:none} h1,h2,h3,h4{color:var(--ink);line-height:1.2;margin:0 0 .5em;font-weight:800;letter-spacing:-.01em} h2{font-size:clamp(1.5rem,3.4vw,2.3rem)} p{margin:0 0 1rem} .container{width:min(100% - 1.75rem,var(--container));margin-inline:auto} @media (min-width:640px){.container{width:min(100% - 2.5rem,var(--container))} } .ic{width:1.1em;height:1.1em;flex:none;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round} .ic--fill{fill:currentColor;stroke:none} .skip-link{position:absolute;top:-100px;left:1rem;background:var(--teal-800);color:#fff;padding:.7rem 1.1rem;z-index:9999;border-radius:0 0 8px 8px;transition:top .2s ease} .skip-link:focus{top:0} a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--teal-700);outline-offset:2px} .topbar:focus-visible,.hero:focus-visible,.cta:focus-visible,.footer:focus-visible{outline-color:var(--gold-soft)} .skip-link:focus-visible{outline-color:var(--gold-soft);outline-offset:0} .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.72rem 1.2rem;border-radius:999px;font-weight:600;font-size:.92rem;border:2px solid transparent;cursor:pointer;transition:.25s ease;max-width:100%;text-align:center;line-height:1.25} .btn--lg{padding:.88rem 1.5rem;font-size:.98rem} .btn--primary{background:linear-gradient(135deg,var(--teal-600),var(--teal-800));color:#fff;box-shadow:var(--shadow-sm)} .btn--primary:hover{transform:translateY(-2px);box-shadow:var(--shadow)} .btn--ghost{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.35);backdrop-filter:blur(6px)} .btn--ghost:hover{background:rgba(255,255,255,.26);transform:translateY(-2px)} .btn--outline{background:#fff;color:var(--teal-700);border-color:var(--line)} .btn--outline:hover{border-color:var(--teal-500);background:var(--mint);transform:translateY(-2px)} .btn--appt{background:var(--gold);color:#231a05;box-shadow:var(--shadow-sm)} .btn--appt:hover{background:var(--gold-soft);transform:translateY(-2px)} .btn--whatsapp{background:var(--wa);color:#04301b} .btn--whatsapp:hover{transform:translateY(-2px);filter:brightness(1.05);box-shadow:var(--shadow)} .btn-icon{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:var(--mint);color:var(--teal-800);border:1px solid var(--line);flex:none;cursor:pointer;transition:.2s} .btn-icon:hover{background:var(--teal-700);color:#fff} .btn-icon--phone{color:var(--teal-700)} .topbar{background:var(--teal-900);color:#cfe6e8;font-size:.78rem;border-bottom:1px solid rgba(255,255,255,.08)} .topbar__inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:38px;padding:.3rem 0;flex-wrap:wrap} .topbar__contact{display:flex;gap:.9rem;flex-wrap:wrap;align-items:center} .topbar__contact a{display:inline-flex;align-items:center;gap:.35rem;transition:color .2s;white-space:nowrap} .topbar__contact a:hover{color:#fff} .topbar__meta{display:flex;align-items:center;gap:1rem} .topbar__meta .topbar__hours-en{display:none} .header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s,background .3s} .header.is-stuck{box-shadow:var(--shadow-sm);background:rgba(255,255,255,.98)} .header__inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:64px} .brand{display:flex;align-items:center;gap:.65rem;flex:1 1 auto;min-width:0} .brand__mark{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none;background:linear-gradient(135deg,var(--teal-600),var(--teal-900));color:#fff;font-weight:800;letter-spacing:.02em;box-shadow:var(--shadow-sm);font-size:.95rem} .brand__text{display:flex;flex-direction:column;line-height:1.2;min-width:0} .brand__text strong{font-size:.92rem;color:var(--ink);font-weight:700;white-space:normal;overflow:hidden;text-overflow:ellipsis} .brand__text small{display:none;font-size:.74rem;color:var(--teal-600);font-weight:500} .nav{display:none;flex-direction:column;gap:.25rem;position:absolute;top:100%;left:0;right:0;background:#fff;padding:1rem 1.25rem 1.25rem;border-bottom:1px solid var(--line);box-shadow:var(--shadow);max-height:calc(100vh - 70px);overflow-y:auto} .nav.is-open{display:flex} .nav a{padding:.75rem 1rem;border-radius:10px;font-weight:600;font-size:.92rem;color:var(--body);transition:.2s} .nav a:hover{color:var(--teal-700);background:var(--mint)} .nav__cta{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;margin-top:.8rem;padding-top:.9rem;border-top:1px solid var(--line)} .nav__cta .btn{width:100%;font-size:.85rem;padding:.65rem .8rem} .header__actions{display:flex;align-items:center;gap:.5rem;flex:none} .header__actions .btn--appt,.header__actions .btn--whatsapp{display:none} .nav-burger{display:flex;width:42px;height:42px;border:1px solid var(--line);background:#fff;border-radius:11px;cursor:pointer;flex-direction:column;gap:5px;align-items:center;justify-content:center} .nav-burger span{width:19px;height:2px;background:var(--ink);border-radius:2px;transition:.3s} .nav-burger[aria-expanded="true"] span:first-child{transform:translateY(7px) rotate(45deg)} .nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0} .nav-burger[aria-expanded="true"] span:last-child{transform:translateY(-7px) rotate(-45deg)} .hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--teal-900) 0%,var(--teal-700) 52%,var(--teal-600) 100%);color:#e9f4f5} .hero__bg{position:absolute;inset:0;background-image:radial-gradient(circle at 82% 18%,rgba(200,162,74,.22),transparent 42%),radial-gradient(circle at 12% 88%,rgba(26,125,146,.5),transparent 46%);pointer-events:none} .hero__bg::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:54px 54px;mask-image:radial-gradient(ellipse at 50% 40%,#000,transparent 78%)} .hero__inner{position:relative;display:grid;grid-template-columns:1fr;gap:2rem;align-items:center;padding:clamp(2rem,5vw,4.5rem) 0 clamp(2.5rem,5vw,5rem)} .pill{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#eaf6f6;padding:.38rem .9rem;border-radius:999px;font-size:.78rem;font-weight:600;margin-bottom:1.1rem;max-width:100%} .pill .ic{color:var(--gold-soft)} .hero h1{margin-bottom:.8rem;color:#fff} .hero h1 span{display:block;font-size:clamp(1.75rem,4.4vw,3.1rem);font-weight:800;line-height:1.15} .hero h1 em{display:block;font-style:normal;font-size:clamp(.95rem,2.1vw,1.4rem);font-weight:600;color:var(--gold-soft);margin-top:.35rem;font-family:var(--ff-en)} .hero__lead{font-size:.98rem;max-width:56ch;color:#d7e9eb;margin-bottom:1.1rem;line-height:1.6} .hero__rating{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin:1rem 0 1.4rem;font-size:.9rem;color:#e4f1f2} .hero__rating strong{font-size:1.1rem;color:#fff} .stars{color:var(--gold);letter-spacing:2px;font-size:1rem} .hero__cta{display:flex;gap:.7rem;flex-wrap:wrap;width:100%} .hero__cta .btn{flex:1 1 calc(50% - .4rem);min-width:130px} .hero__facts{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem;margin-top:1.8rem;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.18);text-align:center} .hero__facts li{display:flex;flex-direction:column;align-items:center} .hero__facts strong{font-size:clamp(1.3rem,4vw,1.75rem);color:#fff;font-weight:800;line-height:1.1} .hero__facts span{font-size:.75rem;color:#b9d6d9;margin-top:.3rem;line-height:1.25} .hero__media{position:relative;display:flex;justify-content:center;max-width:320px;width:100%;margin-inline:auto} .hero__photo{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);border:4px solid rgba(255,255,255,.16);width:100%;background:var(--teal-800)} .hero__photo img{width:100%;aspect-ratio:1;object-fit:cover} .hero__photo::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,transparent 55%,rgba(6,42,53,.55))} .hero__card{position:absolute;background:#fff;color:var(--ink);border-radius:12px;padding:.5rem .75rem;display:flex;align-items:center;gap:.45rem;box-shadow:var(--shadow);font-size:.78rem;font-weight:700;max-width:calc(100% - 1rem);white-space:nowrap;animation:float 5s ease-in-out infinite;pointer-events:none} .hero__card .ic{color:var(--teal-600);width:1em;height:1em} .hero__card--a{top:6%;left:4%} .hero__card--b{bottom:6%;right:4%;animation-delay:1.6s} @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}} .trust{background:var(--white);border-bottom:1px solid var(--line)} .trust__grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;padding:.8rem 0} .trust__item{text-align:center;padding:.85rem .5rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)} .trust__item:nth-child(2n){border-right:0} .trust__item:nth-child(3),.trust__item:nth-child(4){border-bottom:0} .trust__item strong{display:block;font-size:1.45rem;color:var(--teal-700);font-weight:800;line-height:1.1} .trust__item .stars{font-size:.88rem;display:block;margin-top:-.15rem;color:var(--gold-text)} .trust__item p{margin:.25rem 0 0;font-size:.78rem;color:var(--body);line-height:1.3} .section{padding:clamp(2.75rem,6vw,5.5rem) 0} .section--tint{background:var(--mint-2)} .section__head{max-width:64ch;margin:0 auto clamp(1.8rem,3.5vw,2.8rem);text-align:center} .eyebrow{display:inline-block;font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-text);margin-bottom:.55rem} .eyebrow--light{color:var(--gold-soft)} .section__head p{color:var(--body);margin:0;font-size:.95rem} .about{display:grid;grid-template-columns:1fr;gap:2rem;align-items:start} .about__media{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);max-width:440px;margin-inline:auto;width:100%} .about__media img{width:100%;object-fit:cover} .about__badge{position:absolute;bottom:.9rem;left:.9rem;margin:0;background:#fff;border-radius:12px;padding:.55rem .8rem;display:flex;align-items:center;gap:.55rem;box-shadow:var(--shadow);font-size:.78rem;font-weight:700;color:var(--ink)} .about__badge img{width:32px;height:32px;border-radius:8px} .about__copy .eyebrow{margin-bottom:.45rem} .creds{display:grid;grid-template-columns:1fr;gap:1rem;margin-top:1.6rem} .cred{background:var(--mint);border:1px solid var(--line);border-radius:var(--radius);padding:1.1rem 1.15rem} .cred h3{font-size:.98rem;margin-bottom:.65rem;color:var(--teal-700)} .cred ul li{position:relative;padding-left:1.15rem;margin-bottom:.55rem;font-size:.88rem;line-height:1.5} .cred ul li::before{content:"";position:absolute;left:0;top:.58em;width:6px;height:6px;border-radius:50%;background:var(--gold)} .cred ul li b{color:var(--ink)} .svc-groups{display:grid;grid-template-columns:1fr;gap:1.15rem} .svc-group{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.25rem;box-shadow:var(--shadow-sm);transition:.3s} .svc-group:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c5e0e3} .svc-group header{display:flex;align-items:center;gap:.65rem;padding-bottom:.85rem;margin-bottom:.95rem;border-bottom:1px dashed var(--line)} .svc-group header .ic{width:1.5rem;height:1.5rem;color:var(--teal-600)} .svc-group h3{margin:0;font-size:1.08rem} .svc-list li{padding:.65rem 0;border-bottom:1px solid #f1f6f6} .svc-list li:last-child{border-bottom:0;padding-bottom:0} .svc-list b{display:block;color:var(--ink);font-size:.92rem;line-height:1.35} .svc-list span{font-size:.82rem;color:var(--body);line-height:1.4} .clinics{display:grid;grid-template-columns:1fr;gap:1.25rem} .clinic{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:1.25rem;box-shadow:var(--shadow-sm);transition:.3s;display:flex;flex-direction:column} .clinic:hover{transform:translateY(-3px);box-shadow:var(--shadow)} .clinic--featured{border-color:var(--teal-500);background:linear-gradient(180deg,#f3fbfb,#fff)} .clinic--online{background:linear-gradient(180deg,#f6f9fb,#fff)} .clinic__tag{position:absolute;top:-.65rem;left:1.25rem;background:var(--teal-700);color:#fff;font-size:.68rem;font-weight:700;padding:.24rem .7rem;border-radius:999px;letter-spacing:.04em} .clinic h3{margin-bottom:.35rem;font-size:1.15rem;line-height:1.3} .clinic__addr{font-size:.88rem;margin-bottom:.9rem;line-height:1.45} .clinic__meta{display:grid;gap:.5rem;margin:0 0 1.15rem} .clinic__meta>div{display:flex;justify-content:space-between;align-items:baseline;gap:.5rem;font-size:.86rem;padding-bottom:.45rem;border-bottom:1px solid #eef5f5} .clinic__meta dt{color:var(--body);font-weight:500;flex-shrink:0} .clinic__meta dd{margin:0;font-weight:700;color:var(--ink);text-align:right} .clinic__actions{margin-top:auto;display:flex;gap:.55rem;flex-direction:column;width:100%} .clinic__actions .btn{width:100%} .map{margin-top:1.4rem;border-radius:var(--radius-lg);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow-sm);background:var(--mint-2);min-height:270px;position:relative;display:flex;align-items:center;justify-content:center} .map iframe{width:100%;height:270px;border:0;display:block;filter:saturate(1.05)} @media (min-width:768px){.map{min-height:360px} .map iframe{height:360px} } .gallery{display:grid;grid-template-columns:1fr;gap:.9rem} .g-item{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);background:var(--teal-800);aspect-ratio:4/3} .g-item img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease} .g-item:hover img{transform:scale(1.05)} .g-item figcaption{position:absolute;inset:auto 0 0 0;padding:1.4rem .85rem .7rem;background:linear-gradient(transparent,rgba(6,42,53,.92));color:#fff;font-size:.78rem;font-weight:500} .g-item--wide{grid-column:span 1} .g-item--tall{grid-row:span 1} .reviews{columns:1;column-gap:1.1rem} .review{break-inside:avoid;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:var(--radius);padding:1.15rem 1.25rem;margin:0 0 1rem;box-shadow:var(--shadow-sm)} .review p{font-size:.9rem;font-style:italic;color:#2c4149;margin:.4rem 0 .8rem;line-height:1.55} .review cite{font-style:normal;font-weight:700;color:var(--teal-700);font-size:.85rem} .review cite::before{content:"— "} .review .stars{color:var(--gold-text)} .cta{background:linear-gradient(140deg,var(--teal-900),var(--teal-600));color:#e9f4f5;position:relative;overflow:hidden} .cta::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 88% 15%,rgba(200,162,74,.2),transparent 40%)} .cta__inner{position:relative;display:grid;grid-template-columns:1fr;gap:1.8rem;align-items:center} .cta h2{color:#fff} .cta p{color:#d3e7e9;max-width:52ch} .cta__actions{display:flex;gap:.7rem;flex-direction:column;margin-top:1.2rem;width:100%} .cta__actions .btn{width:100%} .cta__cards{display:grid;gap:.8rem} .cta__cards li{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:.85rem 1rem;display:flex;flex-direction:column;gap:.15rem} .cta__cards span{font-size:.74rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gold-soft);font-weight:600} .cta__cards a,.cta__cards b{color:#fff;font-weight:700;font-size:.95rem;transition:.2s;word-break:break-word} .cta__cards a:hover{color:var(--gold-soft)} .footer{background:var(--teal-900);color:#a9c7cb;padding:2.5rem 0 2rem;font-size:.85rem} .footer__inner{display:grid;gap:1.4rem} .footer__brand{display:flex;align-items:center;gap:.9rem} .footer__brand strong{color:#fff;font-size:1rem;display:block} .footer__brand p{margin:.2rem 0 0;font-size:.8rem;color:#87a9ae} .footer__nav{display:flex;gap:1.1rem;flex-wrap:wrap} .footer__nav a{transition:color .2s} .footer__nav a:hover{color:#fff} .footer__note{font-size:.78rem;border-top:1px solid rgba(255,255,255,.12);padding-top:1.2rem;margin:0;color:#87a9ae;line-height:1.55} .footer__copy{margin:0;font-size:.78rem;color:#86a9ad} .fab{position:fixed;right:1.2rem;bottom:1.2rem;width:56px;height:56px;border-radius:50%;background:var(--wa);display:grid;place-items:center;color:#fff;box-shadow:0 12px 30px -8px rgba(37,211,102,.7);z-index:90;transition:.25s} .fab .ic{width:28px;height:28px} .fab:hover{transform:scale(1.08)} .fab::after{content:"";position:absolute;inset:-2px;border-radius:50%;border:2px solid var(--wa);animation:pulse 2.4s ease-out infinite;pointer-events:none} @keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(1.3);opacity:0}} .mobile-bar{position:fixed;bottom:0;left:0;right:0;z-index:95;display:grid;grid-template-columns:1fr 1fr 1.15fr;gap:.45rem;padding:.55rem .75rem calc(.55rem+env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.96);backdrop-filter:blur(16px);border-top:1px solid var(--line);box-shadow:0 -4px 20px rgba(6,42,53,.08)} .mobile-bar__btn{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;padding:.6rem .4rem;border-radius:11px;font-weight:700;font-size:.8rem;text-decoration:none;transition:.2s;min-height:42px;line-height:1} .mobile-bar__btn .ic{width:1.1em;height:1.1em} .mobile-bar__btn--call{background:var(--mint);color:var(--teal-800)} .mobile-bar__btn--wa{background:var(--wa);color:#04301b} .mobile-bar__btn--appt{background:var(--gold);color:#231a05} .mobile-bar__btn:active{transform:scale(.97)} @media (max-width:767px){.fab{display:none} } .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.3,1)} .reveal.is-visible{opacity:1;transform:none} @media (min-width:480px){.brand__text small{display:block} .clinic__actions{flex-direction:row;flex-wrap:wrap} .clinic__actions .btn{width:auto;flex:1 1 calc(50% - .3rem)} .cta__actions{flex-direction:row;flex-wrap:wrap} .cta__actions .btn{width:auto} .gallery{grid-template-columns:repeat(2,1fr)} .g-item{aspect-ratio:auto;height:180px} .g-item--wide{grid-column:span 2} } @media (min-width:768px){.mobile-bar{display:none} .btn-icon--phone{display:none} .header__actions .btn--appt,.header__actions .btn--whatsapp{display:inline-flex} .topbar__meta .topbar__hours-en{display:inline} .trust__grid{grid-template-columns:repeat(4,1fr);padding:1.4rem 0} .trust__item{padding:.4rem .8rem;border-bottom:0;border-right:1px solid var(--line)} .trust__item:nth-child(2n){border-right:1px solid var(--line)} .trust__item:last-child{border-right:0} .svc-groups{grid-template-columns:repeat(2,1fr);gap:1.4rem} .svc-group{padding:1.6rem} .clinics{grid-template-columns:repeat(2,1fr);gap:1.4rem} .clinic{padding:1.6rem} .clinic__actions .btn{flex:0 0 auto;width:auto} .creds{grid-template-columns:1fr 1fr} .reviews{columns:2} .review{padding:1.4rem 1.5rem;margin:0 0 1.2rem} .map iframe{height:360px} .hero__card--a{left:-10px} .hero__card--b{right:-10px} } @media (min-width:1024px){.hero__inner{grid-template-columns:1.1fr .9fr;gap:3rem} .hero__media{max-width:none;margin-inline:0} .about{grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem)} .about__media{max-width:none;margin-inline:0} .cta__inner{grid-template-columns:1.05fr .95fr;gap:3rem} .reviews{columns:3} .gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:220px} .g-item{aspect-ratio:auto;height:100%} .g-item--wide{grid-column:span 1} .g-item--tall{grid-row:span 2} } @media (min-width:1200px){.nav,.nav.is-open{display:flex;position:static;flex-direction:row;background:transparent;padding:0;gap:.35rem;border-bottom:0;box-shadow:none;max-height:none;overflow-y:visible} .nav a{padding:.5rem .8rem;border-radius:9px} .nav__cta{display:none} .nav-burger{display:none} .brand{flex:none} } @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important} }</style>
 
 <script type="application/ld+json">
 {
@@ -76,8 +74,8 @@
 <div class="topbar">
   <div class="container topbar__inner">
     <div class="topbar__contact">
-      <a href="tel:0415388111"><svg viewBox="0 0 24 24" class="ic"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg> 041&#8209;5388111</a>
-      <a href="tel:+923146685891"><svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg> +92&nbsp;314&nbsp;6685891</a>
+      <a href="tel:0415388111" aria-label="Call Rubina Memorial Hospital at 041-5388111"><svg viewBox="0 0 24 24" class="ic"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg> 041&#8209;5388111</a>
+      <a href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891"><svg viewBox="0 0 24 24" class="ic"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 14.5 9 2.5 2.5 0 0 1 12 11.5z"/></svg> +92&nbsp;314&nbsp;6685891</a>
     </div>
     <div class="topbar__meta">
       <span class="topbar__hours-en">Mon–Sat · 2:00 PM – 4:00 PM</span>
@@ -97,18 +95,18 @@
     </a>
 
     <nav class="nav" id="nav" aria-label="Main navigation">
-      <a href="#about"       >About</a>
-      <a href="#services" >Services</a>
-      <a href="#clinics"   >Clinics</a>
+      <a href="#about"        aria-label="About Dr. Hafiz Anwaar Ahmad Sangra">About</a>
+      <a href="#services"  aria-label="View Clinical Cardiology Services">Services</a>
+      <a href="#clinics"    aria-label="View Practice Locations and Schedules">Clinics</a>
       <a href="#gallery"   >Gallery</a>
-      <a href="#reviews"   >Reviews</a>
-      <a href="#contact"   >Contact</a>
+      <a href="#reviews"    aria-label="Verified Patient Reviews and Ratings">Reviews</a>
+      <a href="#contact"    aria-label="Book an Appointment with Dr. Sangra">Contact</a>
       <div class="nav__cta">
-        <a class="btn btn--primary" href="tel:+923146685891">
+        <a class="btn btn--primary" href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891">
           <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
           <span>Call Now</span>
         </a>
-        <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener">
+        <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">
           <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.8 14.3c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.8-1.1-4.56-3.94-4.7-4.13-.13-.2-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.33.7-.33h.5c.16 0 .38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.28.02.45-.36.72-.75.7-.55 1.02.72 1.24 1.45 1.67 2.55 2.22.19.1.3.08.42-.05.12-.13.48-.56.6-.75.13-.2.26-.16.44-.1.18.07 1.48.7 1.73.82.25.13.42.2.48.3.06.1.06.62-.18 1.3z"/></svg>
           <span>WhatsApp</span>
         </a>
@@ -116,14 +114,14 @@
     </nav>
 
     <div class="header__actions">
-      <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener">
+      <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">
         <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.8 14.3c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.8-1.1-4.56-3.94-4.7-4.13-.13-.2-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.33.7-.33h.5c.16 0 .38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.28.02.45-.36.72-.75.7-.55 1.02.72 1.24 1.45 1.67 2.55 2.22.19.1.3.08.42-.05.12-.13.48-.56.6-.75.13-.2.26-.16.44-.1.18.07 1.48.7 1.73.82.25.13.42.2.48.3.06.1.06.62-.18 1.3z"/></svg>
         <span>WhatsApp</span>
       </a>
-      <a class="btn btn--appt" href="#contact">
+      <a class="btn btn--appt" href="#contact" aria-label="Book an Appointment with Dr. Sangra">
         <span>Book Appointment</span>
       </a>
-      <a class="btn-icon btn-icon--phone" href="tel:+923146685891" aria-label="Call Doctor">
+      <a class="btn-icon btn-icon--phone" href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891">
         <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
       </a>
       <button class="nav-burger" id="navBurger" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
@@ -159,11 +157,11 @@
         </div>
 
         <div class="hero__cta">
-          <a class="btn btn--primary btn--lg" href="tel:+923146685891">
+          <a class="btn btn--primary btn--lg" href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891">
             <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
             <span>Call&nbsp;Now</span>
           </a>
-          <a class="btn btn--ghost btn--lg" href="#services">
+          <a class="btn btn--ghost btn--lg" href="#services" aria-label="View Clinical Cardiology Services">
             <span>View Services</span>
           </a>
         </div>
@@ -177,7 +175,7 @@
 
       <div class="hero__media">
         <div class="hero__photo">
-          <img src="images/dr_sangra_executive_headshot_portrait.webp" alt="Dr. Hafiz Anwaar Ahmad Sangra, Consultant Cardiologist in Faisalabad" width="600" height="600" fetchpriority="high" decoding="async">
+          <img src="images/dr_sangra_executive_headshot_portrait-400w.webp" srcset="images/dr_sangra_executive_headshot_portrait-280w.webp 280w, images/dr_sangra_executive_headshot_portrait-400w.webp 400w, images/dr_sangra_executive_headshot_portrait-560w.webp 560w" sizes="(max-width: 640px) 267px, 400px" alt="Dr. Hafiz Anwaar Ahmad Sangra, Consultant Cardiologist in Faisalabad" width="400" height="400" fetchpriority="high" decoding="async">
         </div>
         <div class="hero__card hero__card--a">
           <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M12 21s-7-4.35-9.33-9A5.5 5.5 0 0 1 12 6.5 5.5 5.5 0 0 1 21.33 12C19 16.65 12 21 12 21z"/></svg>
@@ -205,9 +203,9 @@
   <section class="section" id="about">
     <div class="container about">
       <div class="about__media">
-        <img src="images/dr_sangra_consultation_desk_with_echocardiography_machine.webp" alt="Dr. Sangra at his clinical desk with a Toshiba echocardiography machine" loading="lazy" width="900" height="1199" decoding="async">
+        <img src="images/dr_sangra_consultation_desk-330w.webp" srcset="images/dr_sangra_consultation_desk-330w.webp 330w, images/dr_sangra_consultation_desk-660w.webp 660w" sizes="(max-width: 640px) 330px, 450px" alt="Dr. Sangra at his clinical desk with a Toshiba echocardiography machine" loading="lazy" width="330" height="439" decoding="async">
         <figure class="about__badge">
-          <img src="images/dr_sangra_oladoc_verified_portal_avatar.webp" alt="Oladoc verified doctor avatar" loading="lazy" width="200" height="200" decoding="async">
+          <img src="images/dr_sangra_oladoc_verified_portal_avatar-54w.webp" alt="Oladoc verified doctor avatar" loading="lazy" width="27" height="27" decoding="async">
           <figcaption>Oladoc Verified</figcaption>
         </figure>
       </div>
@@ -330,7 +328,7 @@
             <div><dt>Fee</dt><dd>PKR 1,500</dd></div>
           </dl>
           <div class="clinic__actions">
-            <a class="btn btn--primary" href="tel:0415388111">
+            <a class="btn btn--primary" href="tel:0415388111" aria-label="Call Rubina Memorial Hospital at 041-5388111">
               <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
               041&#8209;5388111
             </a>
@@ -348,7 +346,7 @@
             <div><dt>Fee</dt><dd>PKR 1,000</dd></div>
           </dl>
           <div class="clinic__actions">
-            <a class="btn btn--outline" href="tel:0415068065">041&#8209;5068065</a>
+            <a class="btn btn--outline" href="tel:0415068065" aria-label="Call Hospital Helpline at 041-5068065">041&#8209;5068065</a>
           </div>
         </article>
 
@@ -360,7 +358,7 @@
             <div><dt>Fee</dt><dd>PKR 1,500</dd></div>
           </dl>
           <div class="clinic__actions">
-            <a class="btn btn--outline" href="tel:0415068065">041&#8209;5068065</a>
+            <a class="btn btn--outline" href="tel:0415068065" aria-label="Call Hospital Helpline at 041-5068065">041&#8209;5068065</a>
           </div>
         </article>
 
@@ -373,16 +371,16 @@
             <div><dt>Fee</dt><dd>PKR 1,500</dd></div>
           </dl>
           <div class="clinic__actions">
-            <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener">
+            <a class="btn btn--whatsapp" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">
               <span>Book on WhatsApp</span>
             </a>
           </div>
         </article>
       </div>
 
-      <div class="map">
+      <div class="map" id="mapContainer">
         <iframe title="Rubina Memorial Hospital location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=31.4033825,73.1028055&z=16&output=embed"></iframe>
+          data-src="https://www.google.com/maps?q=31.4033825,73.1028055&amp;z=16&amp;output=embed" width="100%" height="270"></iframe>
       </div>
     </div>
   </section>
@@ -396,19 +394,19 @@
       </div>
       <div class="gallery">
         <figure class="g-item g-item--wide">
-          <img src="images/dr_sangra_consultation_desk_with_echocardiography_machine.webp" alt="Consultation desk with Toshiba echocardiography machine" loading="lazy" width="900" height="1199" decoding="async">
+          <img src="images/dr_sangra_consultation_desk-330w.webp" srcset="images/dr_sangra_consultation_desk-330w.webp 330w, images/dr_sangra_consultation_desk-660w.webp 660w" sizes="(max-width: 640px) 330px, 450px" alt="Consultation desk with Toshiba echocardiography machine" loading="lazy" width="330" height="439" decoding="async">
           <figcaption>Consultation desk with modern echocardiography</figcaption>
         </figure>
         <figure class="g-item g-item--tall">
-          <img src="images/dr_sangra_clinic_entrance_and_standee.webp" alt="Clinic room and official nameplate outside the door" loading="lazy" width="800" height="1775" decoding="async">
+          <img src="images/dr_sangra_clinic_entrance-400w.webp" srcset="images/dr_sangra_clinic_entrance-400w.webp 400w, images/dr_sangra_clinic_entrance_and_standee-opt.webp 800w" sizes="(max-width: 640px) 100vw, 400px" alt="Clinic room and official nameplate outside the door" loading="lazy" width="400" height="888" decoding="async">
           <figcaption>Clinic room &amp; official nameplate</figcaption>
         </figure>
         <figure class="g-item">
-          <img src="images/dr_sangra_clinical_services_standee_banner.webp" alt="Clinical services standee banner listing conditions treated" loading="lazy" width="900" height="900" decoding="async">
+          <img src="images/dr_sangra_clinical_services_standee_banner-450w.webp" srcset="images/dr_sangra_clinical_services_standee_banner-450w.webp 450w, images/dr_sangra_clinical_services_standee_banner-opt.webp 900w" sizes="(max-width: 640px) 100vw, 450px" alt="Clinical services standee banner listing conditions treated" loading="lazy" width="450" height="450" decoding="async">
           <figcaption>Services &amp; credentials banner</figcaption>
         </figure>
         <figure class="g-item">
-          <img src="images/dhq_hospital_chiniot_exterior_signboard.webp" alt="DHQ Hospital Chiniot exterior signboard" loading="lazy" width="795" height="386" decoding="async">
+          <img src="images/dhq_hospital_chiniot_exterior_signboard-400w.webp" srcset="images/dhq_hospital_chiniot_exterior_signboard-400w.webp 400w, images/dhq_hospital_chiniot_exterior_signboard-opt.webp 795w" sizes="(max-width: 640px) 100vw, 400px" alt="DHQ Hospital Chiniot exterior signboard" loading="lazy" width="400" height="194" decoding="async">
           <figcaption>DHQ Hospital Chiniot — past appointment</figcaption>
         </figure>
       </div>
@@ -461,18 +459,18 @@
         <h2>Your heart deserves expert care</h2>
         <p>Call, WhatsApp or visit the clinic. Walk-in patients are welcome during OPD hours; advance booking is recommended.</p>
         <div class="cta__actions">
-          <a class="btn btn--primary btn--lg" href="tel:+923146685891">
+          <a class="btn btn--primary btn--lg" href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891">
             <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
             <span>Call&nbsp;+92&nbsp;314&nbsp;6685891</span>
           </a>
-          <a class="btn btn--whatsapp btn--lg" href="https://wa.me/923146685891" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn--whatsapp btn--lg" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">WhatsApp</a>
         </div>
       </div>
 
       <ul class="cta__cards">
-        <li><span>Hospital Booking</span><a href="tel:0415388111">041&#8209;5388111</a></li>
-        <li><span>Second Helpline</span><a href="tel:0415068065">041&#8209;5068065</a></li>
-        <li><span>WhatsApp / Mobile</span><a href="https://wa.me/923146685891" target="_blank" rel="noopener">+92&nbsp;314&nbsp;6685891</a></li>
+        <li><span>Hospital Booking</span><a href="tel:0415388111" aria-label="Call Rubina Memorial Hospital at 041-5388111">041&#8209;5388111</a></li>
+        <li><span>Second Helpline</span><a href="tel:0415068065" aria-label="Call Hospital Helpline at 041-5068065">041&#8209;5068065</a></li>
+        <li><span>WhatsApp / Mobile</span><a href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">+92&nbsp;314&nbsp;6685891</a></li>
         <li><span>Address</span><b>Rubina Memorial Hospital, 717-A Satayana Road, Batala Colony, Faisalabad</b></li>
       </ul>
     </div>
@@ -491,11 +489,11 @@
       </div>
     </div>
     <nav class="footer__nav" aria-label="Footer navigation">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#clinics">Clinics</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#about" aria-label="About Dr. Hafiz Anwaar Ahmad Sangra">About</a>
+      <a href="#services" aria-label="View Clinical Cardiology Services">Services</a>
+      <a href="#clinics" aria-label="View Practice Locations and Schedules">Clinics</a>
+      <a href="#reviews" aria-label="Verified Patient Reviews and Ratings">Reviews</a>
+      <a href="#contact" aria-label="Book an Appointment with Dr. Sangra">Contact</a>
     </nav>
     <p class="footer__note">Medical disclaimer: This website is for information only and does not replace an in-person consultation. In an emergency, call 1122 or the nearest hospital immediately.</p>
     <p class="footer__copy">© <span id="year"></span> Dr. Hafiz Anwaar Ahmad Sangra. <span>All rights reserved.</span></p>
@@ -503,26 +501,26 @@
 </footer>
 
 <!-- ===== FLOATING WHATSAPP (Desktop / Tablet) ===== -->
-<a class="fab" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<a class="fab" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">
   <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.8 14.3c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.8-1.1-4.56-3.94-4.7-4.13-.13-.2-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.33.7-.33h.5c.16 0 .38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.28.02.45-.36.72-.75.7-.55 1.02.72 1.24 1.45 1.67 2.55 2.22.19.1.3.08.42-.05.12-.13.48-.56.6-.75.13-.2.26-.16.44-.1.18.07 1.48.7 1.73.82.25.13.42.2.48.3.06.1.06.62-.18 1.3z"/></svg>
 </a>
 
 <!-- ===== MOBILE STICKY BOTTOM ACTION BAR (Thumb-friendly quick navigation) ===== -->
 <nav class="mobile-bar" aria-label="Mobile quick contact">
-  <a class="mobile-bar__btn mobile-bar__btn--call" href="tel:+923146685891">
+  <a class="mobile-bar__btn mobile-bar__btn--call" href="tel:+923146685891" aria-label="Call Dr. Hafiz Anwaar Ahmad at +92 314 6685891">
     <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
     <span>Call</span>
   </a>
-  <a class="mobile-bar__btn mobile-bar__btn--wa" href="https://wa.me/923146685891" target="_blank" rel="noopener">
+  <a class="mobile-bar__btn mobile-bar__btn--wa" href="https://wa.me/923146685891" target="_blank" rel="noopener" aria-label="Chat with Dr. Anwaar Sangra on WhatsApp">
     <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2zm5.8 14.3c-.24.68-1.4 1.3-1.94 1.35-.5.05-.98.23-3.3-.7-2.8-1.1-4.56-3.94-4.7-4.13-.13-.2-1.1-1.47-1.1-2.8 0-1.34.7-2 .95-2.27.24-.27.53-.33.7-.33h.5c.16 0 .38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.28.02.45-.36.72-.75.7-.55 1.02.72 1.24 1.45 1.67 2.55 2.22.19.1.3.08.42-.05.12-.13.48-.56.6-.75.13-.2.26-.16.44-.1.18.07 1.48.7 1.73.82.25.13.42.2.48.3.06.1.06.62-.18 1.3z"/></svg>
     <span>WhatsApp</span>
   </a>
-  <a class="mobile-bar__btn mobile-bar__btn--appt" href="#contact">
+  <a class="mobile-bar__btn mobile-bar__btn--appt" href="#contact" aria-label="Book an Appointment with Dr. Sangra">
     <svg viewBox="0 0 24 24" class="ic ic--fill"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm0-12H5V6h14v2z"/></svg>
     <span>Book OPD</span>
   </a>
 </nav>
 
-<script src="script.js?v=2" defer></script>
+<script src="script.js?v=3" defer></script>
 </body>
 </html>

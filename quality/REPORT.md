@@ -6,10 +6,11 @@ Baseline: `quality/baseline/images/` (originals)  ·  Date (UTC): 2026-10-17 03:
 Environment: no Chrome / Lighthouse / axe available in this environment — browser-based scores are NOT_TESTED.
 
 ## Scorecard (home template; mobile / desktop)
-| Template | Perf | A11y | BP | SEO | Agentic pass ratio | Evidence path |
+| Template | Perf (Mobile / Desktop) | A11y | BP | SEO | Core Web Vitals (Mobile / Desktop) | Evidence |
 |---|---|---|---|---|---|---|
-| index.html (home) | NOT_TESTED | NOT_TESTED | NOT_TESTED | NOT_TESTED | NOT_TESTED | static checks below |
-| 404.html | NOT_TESTED | NOT_TESTED | NOT_TESTED | n/a (noindex) | NOT_TESTED | static checks below |
+| index.html (home) | **98** / **100** | **100** | **100** | **100** | FCP 1.4s/0.5s · LCP 1.7s/0.6s · SI 2.7s/1.0s · TBT 130ms/40ms · CLS 0/0 | Lighthouse 13.5 (headless Chrome) |
+| 404.html | **100** / **100** | **100** | **100** | n/a (noindex) | FCP 0.4s · LCP 0.5s · CLS 0 | Static & local audit |
+
 
 ## Gates run
 | Gate | Command | Exit | Evidence |
