@@ -1,0 +1,19 @@
+{
+  "name": "dr-hafiz-anwaar-ahmad-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Official medical portfolio & website for Dr. Hafiz Anwaar Ahmad Sangra - Consultant Cardiologist",
+  "scripts": {
+    "build": "echo \"Production build ready\"",
+    "start": "npx -y serve .",
+    "dev": "npx -y serve ."
+  },
+  "keywords": [
+    "cardiologist",
+    "doctor",
+    "faisalabad",
+    "medical-website"
+  ],
+  "author": "Dr. Hafiz Anwaar Ahmad Sangra",
+  "license": "ISC"
+}
