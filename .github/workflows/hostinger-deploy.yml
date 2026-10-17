@@ -1,0 +1,57 @@
+name: Hostinger Auto Deploy CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: production-deployment
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Quality & Integrity Gate
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: 🔍 Verify Production Assets
+        run: |
+          echo "Verifying production assets exist and are non-empty..."
+          test -s index.html || { echo "Error: index.html is missing or empty"; exit 1; }
+          test -s styles.css || { echo "Error: styles.css is missing or empty"; exit 1; }
+          test -s script.js || { echo "Error: script.js is missing or empty"; exit 1; }
+          test -s robots.txt || { echo "Error: robots.txt is missing or empty"; exit 1; }
+          test -s sitemap.xml || { echo "Error: sitemap.xml is missing or empty"; exit 1; }
+          echo "✅ All core files validated successfully."
+
+  deploy:
+    name: 🚀 Deploy to Hostinger
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 📤 Sync Files to Hostinger (public_html)
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.HOSTINGER_FTP_SERVER }}
+          username: ${{ secrets.HOSTINGER_FTP_USERNAME }}
+          password: ${{ secrets.HOSTINGER_FTP_PASSWORD }}
+          protocol: ${{ secrets.HOSTINGER_FTP_PROTOCOL || 'ftps' }}
+          port: ${{ secrets.HOSTINGER_FTP_PORT || 21 }}
+          server-dir: ${{ secrets.HOSTINGER_TARGET_DIR || 'public_html/' }}
+          dangerous-clean-slate: false
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/.github*
+            **/.github*/**
+            **/README.md
+            **/LICENSE

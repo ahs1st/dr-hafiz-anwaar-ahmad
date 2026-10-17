@@ -56,3 +56,22 @@ python -m http.server 8000
 # Open in browser:
 # http://localhost:8000
 ```
+
+---
+
+## 🚀 Hostinger CI/CD Auto-Deployment (ہوسٹنگر آٹو ڈپلائمنٹ)
+
+This repository includes an automated GitHub Actions CI/CD pipeline (`.github/workflows/hostinger-deploy.yml`) that automatically tests and deploys the clean website files to Hostinger (`public_html/`) upon pushing to the `main` branch.
+
+### Required GitHub Secrets (گٹ ہب سیکرٹس کی سیٹنگ)
+
+Go to your GitHub Repository -> **Settings** -> **Secrets and variables** -> **Actions** -> Click **New repository secret**:
+
+| Secret Name | Description | Example Value |
+| :--- | :--- | :--- |
+| `HOSTINGER_FTP_SERVER` | Hostinger FTP Hostname or Server IP | `ftp.yourdomain.com` or `185.xxx.xxx.xxx` |
+| `HOSTINGER_FTP_USERNAME` | Hostinger FTP Account Username | `u123456789` or `ftpuser` |
+| `HOSTINGER_FTP_PASSWORD` | Hostinger FTP Account Password | `YourSecureFtpPassword` |
+| `HOSTINGER_TARGET_DIR` *(Optional)* | Target directory in Hostinger | `public_html/` (Default) |
+| `HOSTINGER_FTP_PROTOCOL` *(Optional)* | Secure Transfer Protocol | `ftps` (Default) |
+
